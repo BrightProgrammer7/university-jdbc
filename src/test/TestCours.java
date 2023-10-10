@@ -13,6 +13,7 @@ import services.CoursService;
  * @author Lachgar
  */
 public class TestCours {
+
     public static void main(String[] args) {
         CoursService cs = new CoursService();
         cs.create(new Cours("Java", 30));

@@ -15,13 +15,14 @@ import services.UserService;
  * @author Lachgar
  */
 public class TestFiliére {
-    
-     public static void main(String[] args) {
+
+    public static void main(String[] args) {
         FiliereService fs = new FiliereService();
         fs.create(new Filiere("2ITE", "2ITE"));
-       fs.create(new Filiere("ISIC", "ISIC"));
-        for(Filiere f : fs.findAll())
+        fs.create(new Filiere("ISIC", "ISIC"));
+        for (Filiere f : fs.findAll()) {
             System.out.println(f.getLibelle());
+        }
     }
-    
+
 }

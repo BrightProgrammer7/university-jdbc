@@ -18,7 +18,7 @@ import util.HibernateUtil;
 public class Test {
     public static void main(String[] args) {
         UserService us = new UserService();
-       // us.create(new User("aa", "aa", new Date()));
+        us.create(new User("aa", "aa", new Date()));
         User uu = us.findById(3);
         uu.setNom("ENSA");
         us.update(uu);
